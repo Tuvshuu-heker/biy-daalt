@@ -1,0 +1,784 @@
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: #f5f7fa;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.logo img{
+    width: 80px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.header .menu ul{
+    list-style-type: none;
+    margin-top: 30px;
+    margin-left: 140px;
+}
+.header .menu ul li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.header .menu ul .Cart{
+    margin-left: 250px;
+}
+.header .menu a{
+    text-decoration: none;
+    color: #000;
+    font-size: large;
+    font-weight: 500;
+    font-family: 'PT Sans', sans-serif;
+}
+.header .menu #cl2{
+    display: none;
+}
+.header .menu .console1:hover #cl1{
+    display: none;
+}
+.header .menu .console1:hover #cl2{
+    display: inline-block;
+}
+.header .clr:hover .cr{
+    color: #919191;
+}
+
+.header .menu #cr2{
+    display: none;
+}
+.header .menu .controller1:hover #cr1{
+    display: none;
+}
+.header .menu .controller1:hover #cr2{
+    display: inline-block;
+}
+
+.header .menu #n2{
+    display: none;
+}
+.header .menu .new1:hover #n1{
+    display: none;
+}
+.header .menu .new1:hover #n2{
+    display: inline-block;
+}
+
+.header .menu #c2{
+    display: none;
+}
+.header .menu .contact1:hover #c1{
+    display: none;
+}
+.header .menu .contact1:hover #c2{
+    display: inline-block;
+}
+
+.mobile-header .navbar-brand img{
+    width: 80px;
+    width: 60px;
+}
+.mobile-header{
+    display: none;
+}
+.home .mobile-Swiper{
+    display: none;
+}
+@media (max-width:821px){
+    .mobile-header{
+        display: block;
+    }
+    .header{
+        display: none;
+    }
+    .home .mySwiper{
+        display: none;
+    }
+    .home .mobile-Swiper{
+        display: block;
+        margin-top: 70px;
+    }
+}
+
+.home{
+    width: 100%;
+}
+.home img{
+    width: 100%;
+    height: 100%;
+}
+.home .mySwiper{
+    width: 70%;
+}
+.console h1{
+    text-align: center;
+    padding-top: 150px;
+    border-bottom: solid #7b52ab 3px;
+    width: 400px;
+    padding-bottom: 5px;
+    margin-left: 750px;
+}
+.console .ps-logo img{
+    width: 100px;
+    margin-top: 50px;
+}
+.console .ps-s{
+    margin-top: 50px;
+}
+.console .ps-s .ps5{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+}
+.console .ps-s .ps5 img{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+.console .ps-s .text{
+    padding: 20px;
+}
+.console .ps-s i{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.console .ps-s h3{
+    color: #000;
+}
+.console .ps-s a{
+    text-decoration: none;
+    color: #000;
+}
+.console .ps-s .ps4{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.console .ps-s .ps4 img{
+    width: 100%;
+    padding: 20px;
+    padding-top: 70px;
+}
+.console .ps4-img{
+    background-color: #fff;
+    height: 340px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+
+.console .ps-s .ps3{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.console .ps-s .ps3 img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 70px;
+}
+.console .ps3-img{
+    background-color: #fff;
+    height: 340px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+
+.container1{
+    width: 1000px;
+    margin: 0 auto;
+}
+.console .ps-s .ps5, .console .ps-s .ps4, .console .ps-s .ps3{
+    width: 30%;
+}
+.controller .ps-cr .xbxx{
+    margin-left: 20px;
+}
+.controller .ps-cr .xbx360{
+    margin-left: 0;
+}
+
+.console .banner{
+    background-image: url(imgs/banner1.png);
+    margin-top: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    height: 350px;
+}
+
+.console .xbox-logo img{
+    width: 100px;
+    margin-top: 100px;
+}
+.console .ps-s .ps5{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+}
+.console .ps-s .ps5-img{
+    background-color: #fff;
+    height: 340px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+.console .ps-s .ps5 img{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+.console .ps-s .text{
+    padding: 20px;
+}
+.console .ps-s i{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.console .ps-s h3{
+    color: #000;
+}
+.console .ps-s a{
+    text-decoration: none;
+    color: #000;
+}
+.console .ps-s .ps4{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.console .ps-s .ps4 img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 20px;
+}
+.console .ps4-img{
+    background-color: #fff;
+    height: 340px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+
+.console .ps-s .ps3{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.console .ps-s .ps3 img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 20px;
+}
+.console .ps3-img{
+    background-color: #fff;
+    height: 340px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+.console .nintendo-logo img{
+    width: 150px;
+    margin-top: 100px;
+}
+.console .ps-s .nl img{
+    width: 100%;
+    height: 160px;
+    padding: 20px;
+    margin-top: 120px;
+}
+.console .nl-img{
+    background-color: #fff;
+    height: 340px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+
+
+
+
+.mobile-console{
+    display: none;
+}
+.mobile-console h1{
+    padding-top: 150px;
+    text-align: center;
+}
+.mobile-console .ps-logo img{
+    width: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.mobile-console .ps-s .ps5{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.mobile-console .ps-s .ps5 img{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+.mobile-console .ps-s .text{
+    padding: 20px;
+}
+.mobile-console .ps-s i{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.mobile-console .ps-s h3{
+    color: #000;
+}
+.mobile-console .ps-s a{
+    text-decoration: none;
+    color: #000;
+}
+.mobile-console .ps-s .ps4{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.mobile-console .ps-s .ps4 img{
+    width: 100%;
+    padding: 20px;
+    padding-top: 70px;
+}
+.mobile-console .ps4-img{
+    background-color: #fff;
+    height: 340px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+
+.mobile-console .ps-s .ps3{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.mobile-console .ps-s .ps3 img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 70px;
+}
+.mobile-console .ps3-img{
+    background-color: #fff;
+    height: 340px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+
+.mobile-console .ps-s .ps2{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.mobile-console .ps-s .ps2 img{
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+.mobile-console .ps2-img{
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+.mobile-console .xbox-logo img{
+    width: 70px;
+    margin-top: 100px;
+}
+.mobile-console .xbx-s{
+    margin-top: 50px;
+}
+.mobile-console .ps-s .ps5{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+}
+.mobile-console .ps-s .ps5-img{
+    background-color: #fff;
+    height: 340px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+.mobile-console .ps-s .ps5 img{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+.mobile-console .ps-s .text{
+    padding: 20px;
+}
+.mobile-console .ps-s i{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.mobile-console .ps-s h3{
+    color: #000;
+}
+.mobile-console .ps-s a{
+    text-decoration: none;
+    color: #000;
+}
+.mobile-console .ps-s .ps4{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.mobile-console .ps-s .ps4 img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 20px;
+}
+.mobile-console .ps4-img{
+    background-color: #fff;
+    height: 340px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+
+.mobile-console .ps-s .ps3{
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.mobile-console .ps-s .ps3 img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 20px;
+}
+.mobile-console .ps3-img{
+    background-color: #fff;
+    height: 340px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+.mobile-console .nintendo-logo img{
+    width: 150px;
+    margin-top: 100px;
+}
+.mobile-console .ps-s .nl img{
+    width: 100%;
+    height: 160px;
+    padding: 20px;
+    margin-top: 120px;
+}
+.mobile-console .nl-img{
+    background-color: #fff;
+    height: 340px;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+}
+@media (max-width:821px){
+    .console{
+        display: none;
+    }
+    .mobile-console{
+        display: block;
+    }
+}
+@media (max-width:415px){
+    .mobile-console .ps-s .ps4{
+        margin-top: 20px;
+    }
+}
+.console .banner2{
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/spider-man-banner_be826e05.jpeg?region=0,0,1600,609);
+    margin-top: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    height: 450px;
+}
+.controller h1{
+    text-align: center;
+    padding-top: 150px;
+    border-bottom: solid #7b52ab 3px;
+    width: 400px;
+    padding-bottom: 5px;
+    margin-left: 750px;
+}
+.controller .ps-cr{
+    margin-top: 100px;
+    display: flex;
+}
+.controller .ps5, .controller .ps4, .controller .ps3, .controller .ps2{
+    height: 270px;
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+}
+.controller .ps4, .controller .ps3, .controller .ps2{
+    margin-left: 20px;
+}
+.controller .swiper{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border-radius:30px 30px 0 0;
+    border-bottom: solid 1px #000;
+}
+.controller .swiper img{
+    width: 100%;
+}
+.controller .text{
+    text-align: center;
+    color: #000;
+    margin-top: 5px;
+}
+.controller .text a{
+    color: #000;
+    text-decoration: none;
+}
+.controller .switchpro img{
+    padding-top: 10px;
+}
+
+
+
+@media (max-width:821px){
+    .controller{
+        display: none;
+    }
+    .mobile-controller{
+        display: block;
+    }
+}
+@media (min-width:822px){
+    .mobile-controller{
+        display: none;
+    }
+}
+@media (min-width:429){
+    .mobile-controller .ps4, .mobile-controller .ps3{
+        margin-left: 20px;
+    }
+}
+@media (max-width:428px){
+    .mobile-controller .ps5, .mobile-controller .ps4, .mobile-controller .ps3, .mobile-controller .ps2{
+        width: 170px;
+        height: 300px;
+        display: inline-block;
+    }
+}
+
+.mobile-controller h1{
+    text-align: center;
+    padding-top: 150px;
+}
+.mobile-controller .ps-cr{
+    margin-top: 100px;
+}
+.mobile-controller .ps5, .mobile-controller .ps4, .mobile-controller .ps3, .mobile-controller .ps2{
+    height: 270px;
+    background-color: #f5f7fa;
+    border: solid 1px #000;
+    border-radius: 30px;
+    display: inline-block;
+}
+.mobile-controller .ps2{
+    margin-top: 20px;
+}
+.mobile-controller .swiper{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border-radius:30px 30px 0 0;
+    border-bottom: solid 1px #000;
+}
+.mobile-controller .swiper img{
+    width: 100%;
+}
+.mobile-controller .text{
+    text-align: center;
+    color: #000;
+    margin-top: 5px;
+}
+.mobile-controller .text h5{
+    font-size: medium;
+}
+.mobile-controller .text a{
+    color: #000;
+    text-decoration: none;
+}
+.Game h1{
+    text-align: center;
+    padding-top: 150px;
+    border-bottom: solid #7b52ab 3px;
+    width: 400px;
+    padding-bottom: 5px;
+    margin-left: 750px;
+}
+.Game .games{
+    margin-top: 100px;
+}
+.Game .games .game{
+    height: 340px;
+    background-color: #f5f7fa;
+    border: 1px solid #000;
+    border-radius: 30px;
+}
+.Game .games .game img{
+    width: 100%;
+    height: 240px;
+    padding-top: 20px;
+}
+.Game .games .game .text {
+    margin-top: 10px;
+    text-align: center;
+}
+.Game .games .game .text a{
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+.Game .games .vdgm{
+    margin-left: 20px;
+}
+.Game .games .rw2{
+    margin-top: 20px;
+}
+
+
+.mobile-Game h1{
+    text-align: center;
+    padding-top: 150px;
+}
+.mobile-Game .games{
+    margin-top: 100px;
+}
+.mobile-Game .games .game{
+    height: 340px;
+    background-color: #f5f7fa;
+    border: 1px solid #000;
+    border-radius: 30px;
+}
+.mobile-Game .games .game img{
+    width: 100%;
+    height: 240px;
+    padding-top: 20px;
+}
+.mobile-Game .games .game .text {
+    margin-top: 10px;
+    text-align: center;
+}
+.mobile-Game .games .game .text a{
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+.mobile-Game .games .vdgm{
+    margin-left: 20px;
+}
+.mobile-Game .games .rw2{
+    margin-top: 20px;
+}
+.mobile-Game .games .rw3{
+    margin-top: 20px;
+}
+.mobile-Game{
+    display: none;
+}
+@media (max-width:822px){
+    .Game{
+        display: none;
+    }
+    .mobile-Game{
+        display: block;
+    }
+}
+@media (max-width:428px){
+    .mobile-Game .games .game{
+        width: 170px;
+        height: 270px;
+    }
+    .mobile-Game .games .game img{
+        height: 200px;
+    }
+    .mobile-Game .games .rw4{
+        margin-top: 20px;
+    }
+    .mobile-Game .games .text h5{
+        font-size: small;
+    }
+    .mobile-console .ps-s .ps5, .mobile-console .ps-s .ps4, .mobile-console .ps-s .ps3, .mobile-console .ps-s .ps2{
+        margin-left: 0;
+    }
+}
+.footer{
+    margin-top: 300px;
+}
+.gif{
+    width: 100%;
+}
+.gif img{
+    width: 100px;
+    height: 100px;
+    animation: slime 45s infinite;
+    position: relative;
+    animation-timing-function: ease;
+}
+@keyframes slime{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+.contact{
+    width: 100%;
+    height: 600px;
+    background-color: #7b52ab;
+    color: #fff;
+}
+.contact h1{
+    padding-top: 10px;
+}
+.contact .line{
+    width: 100%;
+    height: 1px;
+    background-color: #f5f7fa;
+}
+.contact h4{
+    margin-top: 30px;
+}
+.contact ul{
+    list-style-type: none;
+}
+.contact a{
+    text-decoration: none;
+    color: #fff;
+}
+.contact .contact-us i{
+    font-size: 50px;
+}
+.contact .contact-us .ig, .contact  .contact-us .tw{
+    margin-left: 10px;
+}

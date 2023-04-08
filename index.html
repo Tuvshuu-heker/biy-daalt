@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T game store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+        <div class="header">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="#home"><img src="imgs/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#console" class="console1" >Console <i id="cl1" class="bi bi-dpad-fill"></i> <i id="cl2" class="bi bi-dpad"></i> </a></li>
+                            <li><a href="#controller" class="clr" >Controller <i class="bi bi-joystick cr"></i> </a></li>
+                            <li><a href="#game" class="controller1" >Games <i id="cr1" class="bi bi-disc-fill"></i> <i id="cr2" class="bi bi-disc"></i> </a></li>
+                            <li><a class="contact1" href="#contact">Contact <i id="c1" class="bi bi-telephone-forward-fill"></i> <i id="c2" class="bi bi-telephone-forward"></i> </a></li>
+                            <li class="Cart" ><a href="">Wish list <i class="bi bi-suit-heart"></i> </a></li>
+                            <li><a href="">Cart <i class="bi bi-cart3"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-header">
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#mobile-console">Console</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mobile-controller">Controller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mobile-game">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                      </ul>
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    <section id="home" class="home">
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+        loop="true">
+            <swiper-slide><img src="imgs/hogwarts.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="imgs/ResidentEvil.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="imgs/DiedIsland.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="imgs/godofwar.webp" alt=""></swiper-slide>
+          </swiper-container>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+          <swiper-container class="mobile-Swiper" space-between="30" pagination="true" pagination-clickable="true">
+            <swiper-slide><img src="imgs/hogwarts.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="imgs/ResidentEvil.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="imgs/DiedIsland.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="imgs/godofwar.webp" alt=""></swiper-slide>
+          </swiper-container>
+    </section>
+    <section id="console" class="console">
+            <div class="title">
+              <h1>Best-selling consoles</h1>
+            </div>
+        <div class="container1">
+          <div class="ps-logo"><img src="imgs/pslogo.png" alt=""></div>
+          <div class="ps-s">
+            <div class="row">
+              <div class="ps5">
+                <img src="imgs/ps5.webp" alt="">
+                <div class="text">
+                  <h3>Playstation 5 <a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                  <a href=""><h4>price: 499$ <i class="bi bi-cart3"></i> </h4></a>
+                </div>
+              </div>
+              <div class="ps4">
+                <div class="ps4-img">
+                  <img src="imgs/ps4.png" alt="">
+                </div>
+                <div class="text">
+                  <h3>Playstation 4 <a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                  <a href=""><h4>price: 369$ <i class="bi bi-cart3"></i> </h4></a>
+                </div>
+              </div>
+              <div class="ps3">
+                <div class="ps3-img">
+                  <img src="imgs/ps3.png" alt="">
+                </div>
+                <div class="text">
+                  <h3>Playstation 3<a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                  <a href=""><h4>price: 218$ <i class="bi bi-cart3"></i> </h4></a>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+        <div class="banner"></div>
+        <div class="container1">
+          <div class="xbox-logo"><img src="imgs/xboxlogo.png" alt=""></div>
+          <div class="ps-s">
+            <div class="row">
+              <div class=" ps5">
+                <div class="ps5-img">
+                  <img src="imgs/xboxX.png" alt="">
+                </div>
+                <div class="text">
+                  <h3>Xbox Series X <a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                  <a href=""><h4>price: 499$ <i class="bi bi-cart3"></i> </h4></a>
+                </div>
+              </div>
+              <div class=" ps4">
+                <div class="ps4-img">
+                  <img src="imgs/xboxs.png" alt="">
+                </div>
+                <div class="text">
+                  <h3>Xbox One S <a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                  <a href=""><h4>price: 269$ <i class="bi bi-cart3"></i> </h4></a>
+                </div>
+              </div>
+              <div class="ps3">
+                <div class="ps3-img">
+                  <img src="imgs/xbox360.jpg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Xbox 360 <a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                  <a href=""><h4>price: 109$ <i class="bi bi-cart3"></i> </h4></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nintendo-logo"><img src="imgs/nintendologo.svg" alt=""></div>
+          <div class="ps-s">
+            <div class="row">
+              <div class=" ps5">
+                <div class="ps5-img">
+                  <img src="imgs/nintendoswitch.jpg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Nintendo Switch<a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                  <a href=""><h4>price: 299$ <i class="bi bi-cart3"></i> </h4></a>
+                </div>
+              </div>
+              <div class=" ps4 nl">
+                <div class="nl-img">
+                  <img src="imgs/nintendolite.jpg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Nintendo Switchlite <a href=""></a> </h3>
+                  <a href=""><h4>price: 199$ <i class="bi bi-cart3"></i> <i class="bi bi-suit-heart"></i> </h4></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner2"></div>
+    </section>
+    <section id="mobile-console" class="mobile-console">
+      <h1>Best-selling consoles</h1>
+      <div class="container-xxl">
+        <div class="ps-logo"><img src="imgs/pslogo.png" alt=""></div>
+        <div class="ps-s">
+          <div class="row">
+            <div class="col-md-5 ps5">
+              <img src="imgs/ps5.webp" alt="">
+              <div class="text">
+                <h3>Playstation 5 <a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                <a href=""><h4>price: 499$ <i class="bi bi-cart3"></i> </h4></a>
+              </div>
+            </div>
+            <div class="col-md-5 ps4">
+              <div class="ps4-img">
+                <img src="imgs/ps4.png" alt="">
+              </div>
+              <div class="text">
+                <h3>Playstation 4 <a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                <a href=""><h4>price: 369$ <i class="bi bi-cart3"></i> </h4></a>
+              </div>
+            </div>
+            <div class="col-md-5 ps3">
+              <div class="ps3-img">
+                <img src="imgs/ps3.png" alt="">
+              </div>
+              <div class="text">
+                <h3>Playstation 3<a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                <a href=""><h4>price: 218$ <i class="bi bi-cart3"></i> </h4></a>
+              </div>
+            </div>
+            <div class="col-md-5 ps2">
+              <div class="ps2-img">
+                <img src="imgs/ps2.webp" alt="">
+              </div>
+              <div class="text">
+                <h3>Playstation 2<a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                <a href=""><h4>price: 169$ <i class="bi bi-cart3"></i> </h4></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="xbox-logo"><img src="imgs/xboxlogo.png" alt=""></div>
+          <div class="ps-s xbx-s">
+            <div class="row">
+              <div class="col-md-5 ps5">
+                <div class="ps5-img">
+                  <img src="imgs/xboxX.png" alt="">
+                </div>
+                <div class="text">
+                  <h3>Xbox Series X <a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                  <a href=""><h4>price: 499$ <i class="bi bi-cart3"></i> </h4></a>
+                </div>
+              </div>
+              <div class="col-md-5 ps4">
+                <div class="ps4-img">
+                  <img src="imgs/xboxs.png" alt="">
+                </div>
+                <div class="text">
+                  <h3>Xbox One S <a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                  <a href=""><h4>price: 269$ <i class="bi bi-cart3"></i> </h4></a>
+                </div>
+              </div>
+              <div class="col-md-5 ps3">
+                <div class="ps3-img">
+                  <img src="imgs/xbox360.jpg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Xbox 360 <a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                  <a href=""><h4>price: 109$ <i class="bi bi-cart3"></i> </h4></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nintendo-logo"><img src="imgs/nintendologo.svg" alt=""></div>
+          <div class="ps-s">
+            <div class="row">
+              <div class="col-md-5 ps5">
+                <div class="ps5-img">
+                  <img src="imgs/nintendoswitch.jpg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Nintendo Switch<a href=""><i class="bi bi-suit-heart"></i></a> </h3>
+                  <a href=""><h4>price: 299$ <i class="bi bi-cart3"></i> </h4></a>
+                </div>
+              </div>
+              <div class="col-md-5 ps4 nl">
+                <div class="nl-img">
+                  <img src="imgs/nintendolite.jpg" alt="">
+                </div>
+                <div class="text">
+                  <h3>Nintendo Switchlite <a href=""></a> </h3>
+                  <a href=""><h4>price: 199$ <i class="bi bi-cart3"></i> <i class="bi bi-suit-heart"></i> </h4></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id="controller" class="controller">
+    <h1>All controllers</h1>
+    <div class="container-xxl">
+      <div class="row">
+        <div class="ps-cr">
+          <div class="col-md-2 ps5">
+            <div class="swiper">
+              <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="https://i5.walmartimages.com/asr/d2f5acf1-c4fe-4701-a33e-74e0e58194cf.d1d07f8210f04a0f6b15319f5c014a45.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt=""></swiper-slide>
+                <swiper-slide><img src="https://i5.walmartimages.com/asr/2736acff-0239-4f57-9677-b9b194e3bb96.1306073a4dd1a3874d5a8ecf6abebe9f.png" alt=""></swiper-slide>
+                <swiper-slide><img src="https://media.direct.playstation.com/is/image/sierialto/dualsense-ps5-controller-black-accessory-front" alt=""></swiper-slide>
+              </swiper-container>
+            </div>
+            <div class="text">
+              <h5>PS5 controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 69$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-2 ps4">
+          <div class="swiper">
+            <swiper-container class="mySwiper" pagination="true">
+              <swiper-slide><img src="https://target.scene7.com/is/image/Target/GUEST_700a8c05-7925-4054-aabb-d8540636705c?wid=488&hei=488&fmt=pjpeg" alt=""></swiper-slide>
+              <swiper-slide><img src="https://media.direct.playstation.com/is/image/sierialto/dualshock-ps4-controller-red-accessory-front" alt=""></swiper-slide>
+              <swiper-slide><img src="https://media.direct.playstation.com/is/image/sierialto/dualshock-refurb-ps4-controller-white-front" alt=""></swiper-slide>
+            </swiper-container>
+          </div>
+          <div class="text">
+            <h5>PS4 controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+            <a href=""><h6>price: 39$ <i class="bi bi-cart3"></i> </h6></a>
+          </div>
+          </div>
+          <div class="col-md-2 ps3">
+            <div class="swiper">
+              <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="https://i5.walmartimages.com/asr/81f4f69b-cae8-40cc-89e8-460b31cc9a95_1.bf6ca7310892eb8f648ac89291578ac5.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt=""></swiper-slide>
+                <swiper-slide><img src="https://images.heb.com/is/image/HEBGrocery/001512425?fit=constrain,1&wid=800&hei=800&fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0" alt=""></swiper-slide>
+            </div>
+            <div class="text">
+              <h5>PS3 controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 29$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-2 ps2">
+            <div class="swiper">
+              <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61Zr3pNA-VL.jpg" alt=""></swiper-slide>
+            </div>
+            <div class="text">
+              <h5>PS4 controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 19$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-2 ps5 xbxx">
+            <div class="swiper">
+              <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="imgs/xbx-cr1.jpg" alt=""></swiper-slide>
+                <swiper-slide><img src="https://cdn.zochil.shop/9c63c518-a874-4cbd-a2d4-2152068154fe.jpg" alt=""></swiper-slide>
+                <swiper-slide><img src="https://media.gamestop.com/i/gamestop/11108955/Microsoft-Xbox-Series-X-Wireless-Controller-Shock-Blue" alt=""></swiper-slide>
+              </swiper-container>
+            </div>
+            <div class="text">
+              <h5>Xbox-x controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 69$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ps-cr">
+          
+          <div class="col-md-2 ps4 xbx360">
+          <div class="swiper">
+            <swiper-container class="mySwiper" pagination="true">
+              <swiper-slide><img src="https://preview.redd.it/do-you-think-a-360-controller-re-release-similar-to-the-v0-fi2dtiuwaul81.jpg?auto=webp&s=33b19cb870767c3858c501009376aaff954fddb9" alt=""></swiper-slide>
+              <swiper-slide><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71r1LDErYwS.jpg" alt=""></swiper-slide>
+          </div>
+          <div class="text">
+            <h5>Xbox360 controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+            <a href=""><h6>price: 39$ <i class="bi bi-cart3"></i> </h6></a>
+          </div>
+          </div>
+          <div class="col-md-2 ps3 switchpro">
+            <div class="swiper">
+              <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="https://media.gamestop.com/i/gamestop/11103688/PowerA-Nano-Enhanced-Wireless-Controller-for-Nintendo-Switch" alt=""></swiper-slide>
+            </div>
+            <div class="text">
+              <h5>Switch ProController<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 69$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-2 ps3">
+            <div class="swiper">
+              <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61zNKWXZF8L._SX342_.jpg" alt=""></swiper-slide>
+                <swiper-slide><img src="https://media.4rgos.it/s/Argos/6783651_R_SET?$Main768$&w=620&h=620" alt=""></swiper-slide>
+            </div>
+            <div class="text">
+              <h5>Switch Controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 58$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="mobile-controller" class="mobile-controller">
+    <h1>All controllers</h1>
+    <div class="container-xxl">
+      <div class="row">
+        <div class="ps-cr">
+          <div class="col-md-3 ps5">
+            <div class="swiper">
+              <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="https://i5.walmartimages.com/asr/d2f5acf1-c4fe-4701-a33e-74e0e58194cf.d1d07f8210f04a0f6b15319f5c014a45.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt=""></swiper-slide>
+                <swiper-slide><img src="https://i5.walmartimages.com/asr/2736acff-0239-4f57-9677-b9b194e3bb96.1306073a4dd1a3874d5a8ecf6abebe9f.png" alt=""></swiper-slide>
+                <swiper-slide><img src="https://media.direct.playstation.com/is/image/sierialto/dualsense-ps5-controller-black-accessory-front" alt=""></swiper-slide>
+              </swiper-container>
+            </div>
+            <div class="text">
+              <h5>PS5 controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 69$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-3 ps4">
+          <div class="swiper">
+            <swiper-container class="mySwiper" pagination="true">
+              <swiper-slide><img src="https://target.scene7.com/is/image/Target/GUEST_700a8c05-7925-4054-aabb-d8540636705c?wid=488&hei=488&fmt=pjpeg" alt=""></swiper-slide>
+              <swiper-slide><img src="https://media.direct.playstation.com/is/image/sierialto/dualshock-ps4-controller-red-accessory-front" alt=""></swiper-slide>
+              <swiper-slide><img src="https://media.direct.playstation.com/is/image/sierialto/dualshock-refurb-ps4-controller-white-front" alt=""></swiper-slide>
+            </swiper-container>
+          </div>
+          <div class="text">
+            <h5>PS4 controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+            <a href=""><h6>price: 39$ <i class="bi bi-cart3"></i> </h6></a>
+          </div>
+          </div>
+          <div class="col-md-3 ps3">
+            <div class="swiper">
+              <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="https://i5.walmartimages.com/asr/81f4f69b-cae8-40cc-89e8-460b31cc9a95_1.bf6ca7310892eb8f648ac89291578ac5.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt=""></swiper-slide>
+                <swiper-slide><img src="https://images.heb.com/is/image/HEBGrocery/001512425?fit=constrain,1&wid=800&hei=800&fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0" alt=""></swiper-slide>
+            </div>
+            <div class="text">
+              <h5>PS3 controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 29$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-3 ps2">
+            <div class="swiper">
+              <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61Zr3pNA-VL.jpg" alt=""></swiper-slide>
+            </div>
+            <div class="text">
+              <h5>PS4 controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 19$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ps-cr">
+          <div class="col-md-3 ps5">
+            <div class="swiper">
+              <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="imgs/xbx-cr1.jpg" alt=""></swiper-slide>
+                <swiper-slide><img src="https://cdn.zochil.shop/9c63c518-a874-4cbd-a2d4-2152068154fe.jpg" alt=""></swiper-slide>
+                <swiper-slide><img src="https://media.gamestop.com/i/gamestop/11108955/Microsoft-Xbox-Series-X-Wireless-Controller-Shock-Blue" alt=""></swiper-slide>
+              </swiper-container>
+            </div>
+            <div class="text">
+              <h5>Xbox-x controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 69$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-3 ps4">
+          <div class="swiper">
+            <swiper-container class="mySwiper" pagination="true">
+              <swiper-slide><img src="https://preview.redd.it/do-you-think-a-360-controller-re-release-similar-to-the-v0-fi2dtiuwaul81.jpg?auto=webp&s=33b19cb870767c3858c501009376aaff954fddb9" alt=""></swiper-slide>
+              <swiper-slide><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71r1LDErYwS.jpg" alt=""></swiper-slide>
+          </div>
+          <div class="text">
+            <h5>Xbox360 controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+            <a href=""><h6>price: 39$ <i class="bi bi-cart3"></i> </h6></a>
+          </div>
+          </div>
+          <div class="col-md-3 ps3 switchpro">
+            <div class="swiper">
+              <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="https://media.gamestop.com/i/gamestop/11103688/PowerA-Nano-Enhanced-Wireless-Controller-for-Nintendo-Switch" alt=""></swiper-slide>
+            </div>
+            <div class="text">
+              <h5>Switch ProController<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 69$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-3 ps2">
+            <div class="swiper">
+              <swiper-container class="mySwiper" pagination="true">
+                <swiper-slide><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61zNKWXZF8L._SX342_.jpg" alt=""></swiper-slide>
+                <swiper-slide><img src="https://media.4rgos.it/s/Argos/6783651_R_SET?$Main768$&w=620&h=620" alt=""></swiper-slide>
+            </div>
+            <div class="text">
+              <h5>Switch Controller<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 58$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="game" class="Game">
+    <h1>2023 Best Games</h1>
+    <div class="games">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-md-2 game">
+            <img src="https://static-ca.gamestop.ca/images/products/764305/3max.jpg" alt="">
+            <div class="text">
+              <h5>Horizon Forbidden West PS4, PS5<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 50$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-2 game vdgm">
+            <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/711lrrvzt+L.jpg" alt="">
+            <div class="text">
+              <h5>God of War Ragnarök PS4, PS5<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 119$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-2 game vdgm">
+            <img src="https://cdn.shopify.com/s/files/1/0572/8819/6269/products/stray_ps4ps5_grande.jpg?v=1657613806" alt="">
+            <div class="text">
+              <h5>Stray PS4, PS5<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 78$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-2 game vdgm">
+            <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81yuT9n7gkL.jpg" alt="">
+            <div class="text">
+              <h5>Elden Ring PS4, PS5<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 83$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-2 game vdgm">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6518/6518305_sd.jpg;maxHeight=640;maxWidth=550" alt="">
+            <div class="text">
+              <h5>Hogwarts Legacy PS4, PS5<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 99$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+        </div>
+        <div class="row rw2">
+          <div class="col-md-2 game">
+            <img src="https://cdn.shopify.com/s/files/1/0572/8819/6269/products/minecraft_df3c9eb0-c11b-4e81-98de-eafe920bd7cf_grande.jpg?v=1625997703" alt="">
+            <div class="text">
+              <h5>Minecraft PS4, PS5<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 49$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-2 game vdgm">
+            <img src="https://livekaarten.nl/pl/dead-island-2-gold-edition-xbox-one-xbox-series-xs-eu-66691.png" alt="">
+            <div class="text">
+              <h5>Died Island2 Xbox<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 49$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-2 game vdgm">
+            <img src="https://media.vandal.net/m/102224/starfield-202252713434624_1.jpg" alt="">
+            <div class="text">
+              <h5>Starfield Xbox<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 49$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-2 game vdgm">
+            <img src="imgs/gameSeaof.jpg" alt="">
+            <div class="text">
+              <h5>Sea Of Stars<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 49$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-2 game vdgm">
+            <img src="imgs/gameZelda.jpg" alt="">
+            <div class="text">
+              <h5>The Legend Of Zelda<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 49$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="mobile-game" class="mobile-Game">
+    <h1>2023 Best Games</h1>
+    <div class="games">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-md-3 game vdgm">
+            <img src="https://static-ca.gamestop.ca/images/products/764305/3max.jpg" alt="">
+            <div class="text">
+              <h5>Horizon Forbidden West PS4, PS5<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 50$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-3 game vdgm">
+            <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/711lrrvzt+L.jpg" alt="">
+            <div class="text">
+              <h5>God of War Ragnarök PS4<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 119$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-3 game vdgm rw4">
+            <img src="https://cdn.shopify.com/s/files/1/0572/8819/6269/products/stray_ps4ps5_grande.jpg?v=1657613806" alt="">
+            <div class="text">
+              <h5>Stray PS4, PS5<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 78$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-3 game rw3 vdgm">
+            <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81yuT9n7gkL.jpg" alt="">
+            <div class="text">
+              <h5>Elden Ring PS4, PS5<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 83$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-3 game rw3 vdgm">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6518/6518305_sd.jpg;maxHeight=640;maxWidth=550" alt="">
+            <div class="text">
+              <h5>Hogwarts Legacy PS4, PS5<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 99$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+        </div>
+        <div class="row rw2">
+          <div class="col-md-3 game vdgm">
+            <img src="https://cdn.shopify.com/s/files/1/0572/8819/6269/products/minecraft_df3c9eb0-c11b-4e81-98de-eafe920bd7cf_grande.jpg?v=1625997703" alt="">
+            <div class="text">
+              <h5>Minecraft PS4, PS5<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 49$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-3 game vdgm">
+            <img src="https://livekaarten.nl/pl/dead-island-2-gold-edition-xbox-one-xbox-series-xs-eu-66691.png" alt="">
+            <div class="text">
+              <h5>Died Island2 Xbox<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 49$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-3 game vdgm rw4">
+            <img src="https://media.vandal.net/m/102224/starfield-202252713434624_1.jpg" alt="">
+            <div class="text">
+              <h5>Starfield Xbox<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 49$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-3 game vdgm rw3">
+            <img src="imgs/gameSeaof.jpg" alt="">
+            <div class="text">
+              <h5>Sea Of Stars<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 49$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+          <div class="col-md-3 game vdgm rw3">
+            <img src="imgs/gameZelda.jpg" alt="">
+            <div class="text">
+              <h5>The Legend Of Zelda<a href=""><i class="bi bi-suit-heart"></i></a> </h5>
+              <a href=""><h6>price: 49$ <i class="bi bi-cart3"></i> </h6></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="footer" id="footer" >
+    <div class="gif">
+      <img src="https://media.tenor.com/VsI4oUh4-wQAAAAi/pixel-rabbit-rabbit.gif" alt="">
+    </div>
+    <section id="contact" class="contact">
+      <div class="container-xxl">
+        <h1>T Game Store</h1>
+        <div class="line"></div>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>All Products</h4>
+            <ul>
+              <li><a href="">Playstation games</a></li>
+              <li><a href="">Nintendo games</a></li>
+              <li><a href="">Xbox games</a></li>
+              <li><a href="">Console</a></li>
+              <li><a href="">Controller</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>About us</h4>
+            <div class="text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iste id porro accusamus vel, distinctio repellendus nostrum. Harum ad veritatis dignissimos iusto, iste aspernatur! Obcaecati autem placeat officiis eius officia est, consectetur ipsum voluptatum quae pariatur molestiae! Eaque delectus asperiores veniam cum autem architecto eligendi quae necessitatibus aspernatur, excepturi eius enim qui, tempore saepe ab ex reiciendis nam rem sapiente. Aliquam voluptates delectus velit totam consequuntur rerum earum repellendus at. Repudiandae, debitis unde voluptatem facere nobis ut laborum, hic saepe ducimus modi inventore numquam natus aperiam ratione alias praesentium adipisci commodi. Laborum, incidunt minus eligendi ipsam molestias cumque culpa facilis.
+            </div>
+          </div>
+          <div class="col-md-4 contact-us">
+            <h4>Contact us</h4>
+            <a href="https://www.facebook.com/tuvshintur.turuu/" target="_blank" ><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/tuvshu_47/" target="_blank"  class="ig" ><i class="bi bi-instagram"></i></a>
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="tw" ><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
